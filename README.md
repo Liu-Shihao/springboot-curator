@@ -1,5 +1,7 @@
 # Curator 5.1 用法Demo
 
+Apache Curator是Apache ZooKeeper的高级Java客户端。它提供了许多有用的分布式系统解决方案，包括Elections、Locks、Barriers、Counters、Catches、Nodes/Watches、Queues。
+所有依赖Zookeeper的Apache项目，都使用Apache Curator，如：Hadoop、Flink、HBase等等。
 
 # 版本
 SpringBoot：2.6.7<br>

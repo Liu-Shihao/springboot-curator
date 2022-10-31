@@ -8,6 +8,7 @@ import org.apache.curator.framework.recipes.cache.*;
  * @Author: LiuShihao
  * @Date: 2022/10/31 14:09
  * @Desc: Zookeeper Node Listen
+ * 从ZooKeeper接收到的watch事件顺序一定和ZooKeeper服务所看到的事件顺序是一致的。
  */
 @Slf4j
 public class CuratorCacheApi {

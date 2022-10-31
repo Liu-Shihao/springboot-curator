@@ -12,8 +12,8 @@ import java.util.Collection;
 /**
  * @Author: LiuShihao
  * @Date: 2022/10/31 14:08
- * @Desc: Curator 事务 API：
- * Curator还支持事务，一组crud操作同生同灭
+ * @Desc: Curator 事务 API： curatorFramework.transactionOp()
+ * 对于涉及多种基本操作的场景如何保证所有基本操作的原子性呢？答案就是：Curator所提供的事务管理功能。
  */
 @Slf4j
 public class CuratorTransactionApi {
@@ -36,7 +36,6 @@ public class CuratorTransactionApi {
         }
         /**
          * 上面的例子最后会抛异常KeeperErrorCode = Directory not empty，由于最后一步delete的节点/a存在子节点，所以整个事务commit失败。
-         *
          * 注意：事务操作的时候不支持自动创建父节点,也就是说你想创建的节点如果是多层的,那么父节点一定要存在才可以。
          */
     }
