@@ -5,7 +5,7 @@
 SpringBoot：2.6.7<br>
 Curator：5.1.0<br>
 Zookeeper使用curator-test的TestingServer进行模拟。<br>
-# 监听
+# 一、监听
 在Curator低版本（4.0.1）中，使用了`NodeCache`、`PathChildrenCache`和`TreeCache`
 
 ```java
@@ -70,3 +70,13 @@ Zookeeper使用curator-test的TestingServer进行模拟。<br>
         });
         curatorCache.start();
 ```
+
+# 二、 异步
+
+
+# 三、事务
+
+
+
+
+
